@@ -1,6 +1,76 @@
 # AirBnB Clone - The Console
 The console is the first segment of the AirBnB project that will collectively cover fundamental concepts of higher level programming. The goal of AirBnB project is to eventually deploy our server a simple copy of the AirBnB Website(HBnB). A command interpreter is created in this segment to manage objects for the AirBnB(HBnB) website.
 
+
+**Technologies Used**
+
+Python: Core programming language.
+
+Flask: Web framework for the dynamic web application.
+
+MySQL: Database backend for object persistence.
+
+HTML/CSS: Static content for rendering web pages.
+
+Shell Scripting: Environment setup and deployment.
+
+**Directory Structure**
+
+
+AirBnB_clone_v4/
+├── console.py              # Command-line interface for managing objects
+├── web_flask/              # Flask application directory
+│   ├── __init__.py         # Flask package initializer
+│   ├── 0-hello_route.py    # Basic Flask route
+│   └── 100-dump.sql        # Database schema dump
+├── setup_mysql_dev.sql     # SQL script for development database setup
+├── setup_mysql_test.sql    # SQL script for test database setup
+├── AUTHORS                 # Project contributors
+└── README.md               # Project documentation
+
+
+
+
+Installation
+
+**Clone the repository:
+**
+git clone https://github.com/yourusername/AirBnB_clone_v4.git
+cd AirBnB_clone_v4
+
+**Set up the virtual environment (optional but recommended):**
+
+python3 -m venv venv
+source venv/bin/activate
+
+**Install dependencies:**
+
+pip install -r requirements.txt
+
+**Set up MySQL databases using provided scripts:
+**
+cat setup_mysql_dev.sql | mysql -u root -p
+
+**Usage**
+
+**Starting the Console**
+
+./console.py
+
+**Sample Commands:**
+
+(hbnb) create User name="John Doe"
+(hbnb) show User <user_id>
+(hbnb) quit
+
+**Running the Flask Web Application**
+
+**python3 -m web_flask.0-hello_route
+
+Access it at: http://localhost:5000**
+
+
+
 #### Functionalities of this command interpreter:
 * Create a new object (ex: a new User or a new Place)
 * Retrieve an object from a file, a database etc...
